@@ -1,1 +1,1 @@
-#Check if a Spam App
+# Check if a Spam App
