@@ -2,6 +2,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-align: center;
 }
 
 .main {
@@ -9,4 +10,11 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+.textarea {
+  text-align: center;
+}
+.msg-label {
+    display: flex;
+    flex-direction: column;
 }

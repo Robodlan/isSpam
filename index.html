@@ -11,17 +11,20 @@
         <div class="container">
             <h1>Is This Spam?</h1>
             <h2>Enter a phrase to check if it would be marked as spam or not.</h2>
-    
+           <div class="msg-label">
             <label for="texterea" class="message">Message</label>
-        <textarea 
-            value = ""
-            name="texterea" 
-            id="texterea"
-            placeholder="Enter message here:"
-            rows="10"
-            cols="40"
-            >
-        </textarea>
+            <textarea
+                class="textarea" 
+                value = ""
+                name="texterea" 
+                id="texterea"
+                placeholder= "Enter message here: "
+                rows="10"
+                cols="40"
+                >
+            </textarea>
+           </div>
+            
         <button id="btn" class="btn">Check</button>
         <p id="result" class="result"></p>
 
