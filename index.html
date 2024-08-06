@@ -8,21 +8,25 @@
 </head>
 <body>
     <main id="main" class="main">
-        <h1>Is This Spam?</h1>
-        <h2>Enter a phrase to check if it would be marked as spam or not.</h2>
+        <div class="container">
+            <h1>Is This Spam?</h1>
+            <h2>Enter a phrase to check if it would be marked as spam or not.</h2>
+    
+            <label for="texterea" class="message">Message</label>
+        <textarea 
+            value = ""
+            name="texterea" 
+            id="texterea"
+            placeholder="Enter message here:"
+            rows="10"
+            cols="40"
+            >
+        </textarea>
+        <button id="btn" class="btn">Check</button>
+        <p id="result" class="result"></p>
 
-        <label for="texterea" class="message">Message</label>
-    <textarea 
-        value = ""
-        name="texterea" 
-        id="texterea"
-        placeholder="Enter message here:"
-        rows="10"
-        cols="40"
-        >
-    </textarea>
-    <button id="btn" class="btn">Check</button>
-    <p id="result" class="result"></p>
+        </div>
+        
     </main>
     <script src="script.js" ></script>
 </body>

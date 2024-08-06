@@ -4,7 +4,9 @@ const btn = document.getElementById("btn")
 
 
 const helpRegex = /please help | assist me/i
-const isSpam = (msg) => helpRegex.test(msg)
+const dollarRegex = /dollars/i
+const denyList = [helpRegex, dollarRegex]
+const isSpam = (msg) => denyList.some(regex => regex.test(msg))
 
 btn.addEventListener("click", () =>{
    console.log(isSpam);
@@ -16,5 +18,4 @@ btn.addEventListener("click", () =>{
   "Oh no! This looks like a spam message." : 
   "This message does not seem to contain any spam."
   text.value = ""
-  
 })
